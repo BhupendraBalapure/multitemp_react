@@ -1,4 +1,6 @@
 
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function About() {
 
@@ -8,19 +10,17 @@ function About() {
         description:
             // "We help businesses grow using React, Laravel, and modern technologies.",
             `MS Orthopaedics | Arthroscopy, Sports Injury, Knee & Shoulder Surgeon
+             Dr. Sahil is a fellowship-trained orthopaedic surgeon known for precision-driven arthroscopic and shoulder surgery. With a strong academic foundation and advanced surgical training, he specializes in restoring joint stability, function, and performance.
+             He completed his MS in Orthopaedics from the prestigious Jawaharlal Nehru Medical College, Belgaum, one of the country's respected medical institutions, where he developed expertise in trauma management and complex joint disorders.
+             He subsequently pursued Fellowship Training in Arthroscopy, Sports Injury & Joint Preservation (Knee Surgery) in Mumbai, followed by a dedicated Fellowship in Advanced Shoulder Surgery.`,
 
-Dr. Sahil is a fellowship-trained orthopaedic surgeon known for precision-driven arthroscopic and shoulder surgery. With a strong academic foundation and advanced surgical training, he specializes in restoring joint stability, function, and performance.
-
-He completed his MS in Orthopaedics from the prestigious Jawaharlal Nehru Medical College, Belgaum, one of the country's respected medical institutions, where he developed expertise in trauma management and complex joint disorders.
-
-He subsequently pursued Fellowship Training in Arthroscopy, Sports Injury & Joint Preservation (Knee Surgery) in Mumbai, followed by a dedicated Fellowship in Advanced Shoulder Surgery.`,
-            
         image:
             "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
     };
 
     return (
         <>
+            <Navbar />
             <section className="py-16 bg-gray-100">
                 <div className="max-w-7xl mx-auto px-4">
 
@@ -54,6 +54,7 @@ He subsequently pursued Fellowship Training in Arthroscopy, Sports Injury & Join
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 }
